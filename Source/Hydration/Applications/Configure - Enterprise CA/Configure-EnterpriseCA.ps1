@@ -23,11 +23,11 @@ Write-Host "Logging to $logFile"
 
 # Configure Enterprise CA
 Install-AdcsCertificationAuthority `
-    �CAType EnterpriseRootCA `
-    �CACommonName "GreekGeeksRootCA" `
-    �KeyLength 2048 `
-    �HashAlgorithm SHA1 `
-    �CryptoProviderName "RSA#Microsoft Software Key Storage Provider" `
+    -CAType EnterpriseRootCA `
+    -CACommonName "GreekGeeksRootCA" `
+    -KeyLength 2048 `
+    -HashAlgorithm SHA1 `
+    -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" `
     -ValidityPeriod Years `
     -ValidityPeriodUnits 5 `
     -Force
