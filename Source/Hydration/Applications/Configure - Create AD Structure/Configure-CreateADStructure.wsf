@@ -232,6 +232,116 @@ Function ZTIProcess()
 	oUser.Put "userAccountControl", 66048
 	oUser.SetInfo
 
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Elias")
+	oUser.Put "SAMAccountName", "Elias"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=George")
+	oUser.Put "SAMAccountName", "George"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Maria")
+	oUser.Put "SAMAccountName", "Maria"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Katerina")
+	oUser.Put "SAMAccountName", "Katerina"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Jason")
+	oUser.Put "SAMAccountName", "Jason"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Aphrodite")
+	oUser.Put "SAMAccountName", "Aphrodite"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Tiana")
+	oUser.Put "SAMAccountName", "Tiana"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Wally")
+	oUser.Put "SAMAccountName", "Wally"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Rick")
+	oUser.Put "SAMAccountName", "Rick"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Brian")
+	oUser.Put "SAMAccountName", "Brian"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+
+	Set oOU = GetObject(sOUPath)
+	Set oUser = oOU.Create("User", "cn=Greg")
+	oUser.Put "SAMAccountName", "Greg"
+	oUser.Put "Description", "Standard User"
+ 	oUser.SetInfo
+
+	oUser.SetPassword "P@ssw0rd"
+	oUser.Put "userAccountControl", 66048
+	oUser.SetInfo
+	
 End Function
 
 </script>
