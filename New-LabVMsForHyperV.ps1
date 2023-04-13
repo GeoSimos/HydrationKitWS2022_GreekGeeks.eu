@@ -54,19 +54,25 @@ param(
 $VMSettings = @()
 switch ($SelectVMs) {
     'CM' {
-        $VMSettings += [pscustomobject]@{ VMName = "CM01"; VMMemory = 8192MB; VMDiskSize = 300GB; VMCPUCount = 4 }
+        $VMSettings += [pscustomobject]@{ VMName = "HK22-CM01"; VMMemory = 8192MB; VMDiskSize = 300GB; VMCPUCount = 4 }
     }
     'DC' {
-        $VMSettings += [pscustomobject]@{ VMName = "DC01"; VMMemory = 2048MB; VMDiskSize = 100GB; VMCPUCount = 2 }
+        $VMSettings += [pscustomobject]@{ VMName = "HK22-DC01"; VMMemory = 2048MB; VMDiskSize = 100GB; VMCPUCount = 2 }
     }
     'DP' {
-        $VMSettings += [pscustomobject]@{ VMName = "DP01"; VMMemory = 4096MB; VMDiskSize = 300GB; VMCPUCount = 2 }
+        $VMSettings += [pscustomobject]@{ VMName = "HK22-DP01"; VMMemory = 4096MB; VMDiskSize = 300GB; VMCPUCount = 2 }
     }
     'FS' {
-        $VMSettings += [pscustomobject]@{ VMName = "FS01"; VMMemory = 2048MB; VMDiskSize = 300GB; VMCPUCount = 2 }
+        $VMSettings += [pscustomobject]@{ VMName = "HK22-FS01"; VMMemory = 2048MB; VMDiskSize = 300GB; VMCPUCount = 2 }
     }
     'MDT' {
-        $VMSettings += [pscustomobject]@{ VMName = "MDT01"; VMMemory = 4096MB; VMDiskSize = 300GB; VMCPUCount = 2 }
+        $VMSettings += [pscustomobject]@{ VMName = "HK22-MDT01"; VMMemory = 4096MB; VMDiskSize = 300GB; VMCPUCount = 2 }
+    }
+    'SPSE01' {
+        $VMSettings += [pscustomobject]@{ VMName = "HK22-SPSE01"; VMMemory = 4096MB; VMDiskSize = 127GB; VMCPUCount = 2 }
+    }
+    'SPSE02' {
+        $VMSettings += [pscustomobject]@{ VMName = "HK22-SPSE02"; VMMemory = 4096MB; VMDiskSize = 127GB; VMCPUCount = 2 }
     }
 }
 
