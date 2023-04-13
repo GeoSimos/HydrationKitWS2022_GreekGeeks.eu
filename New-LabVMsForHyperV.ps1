@@ -26,7 +26,7 @@
     Specify the Hyper-V Virtual Network.
 
     .PARAMETER SelectVMs
-    Specify the VMs that should be created. If this parameter is not specified, all are created. (DC01, CM01, MDT01, DP01, FS01)
+    Specify the VMs that should be created. If this parameter is not specified, all are created. (DC01, CM01, MDT01, DP01, FS01, SPSE01, SPSE02)
 
 #>
 
@@ -47,7 +47,7 @@ param(
     [string]$VMNetwork,
     [parameter(Mandatory = $false, HelpMessage = "Specify the VMs to be created (DC, CM, MDT, DP, FS). All VMs are created by default.")]
     [ValidateNotNullOrEmpty()]
-    $SelectVMs = @('DC', 'CM', 'MDT', 'DP', 'FS')
+    $SelectVMs = @('DC', 'CM', 'MDT', 'DP', 'FS', 'SPSE01', 'SPSE02')
 )
 
 # Below are details for each VM
